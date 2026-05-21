@@ -10,12 +10,20 @@ public class Livro {
         this.disponivel = disponivel;
     }
 
-    boolean getDisponivel() {
+    public boolean getDisponivel() {
         return this.disponivel;
     }
 
-    void setDisponivel(boolean status) {
+    public String getTitulo(){
+        return this.titulo;
+    }
+
+    public void setDisponivel(boolean status) {
         this.disponivel = status;
+    }
+
+    public String toString() {
+        return this.codigo + " | " + this.titulo + " | " + this.autor + " | " + this.disponivel;
     }
 
 
