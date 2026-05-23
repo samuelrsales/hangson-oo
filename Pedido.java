@@ -13,5 +13,23 @@ public class Pedido {
         this.statusPedido = statusPedido;
     }
 
+    public String getStatus() {
+        return this.statusPedido;
+    }
+
+    public void setStatus(String status) {
+            this.statusPedido = status;
+    }
+
+    public int getNumeroPedido() {
+        return this.numeroPedido;
+    }
+
+    public double getValorPedido() {
+        return this.valorPedido;
+    }
     
+    public String toString() {
+        return this.numeroPedido + " | " + this.nomeCliente + " | " + this.itemPedido + " | " + this.valorPedido + " | " + this.statusPedido;
+    }
 }
